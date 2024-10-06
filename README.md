@@ -1,2 +1,0 @@
-# NLA
- Numerical Linear Algebra
