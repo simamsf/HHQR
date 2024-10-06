@@ -6,7 +6,6 @@ MyArray = npt.NDArray[np.float64]
 def house(A: MyArray) -> tuple[MyArray, MyArray]:
     '''
     Gets the QR factorization of matrix A using Householder reflections.
-    
     Outputs: W and R where W.
     '''
     
