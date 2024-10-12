@@ -81,3 +81,22 @@ def inf_norm(A: MyArray) -> float:
     return max(np.sum(np.abs(A), axis=1))
     # return max(sum(abs(A[i, j]) for j in range(A.shape[1])) for i in range(A.shape[0]))
 
+
+
+# Solve Rc = Q^T * b using back-substitution
+def back_substitution(R, y):
+    """Solve the equation Rx = y for x, where R is an upper triangular matrix."""
+    n = R.shape[1]  # Use the number of columns in R
+    x = np.zeros(n)
+    for i in range(n-1, -1, -1):
+        x[i] = (y[i] - np.dot(R[i, i+1:], x[i+1:])) / R[i, i]
+    return x
+
+
+# Evaluate p(x) at a given value using Horner's method
+def evaluate_polynomial(coeffs, x):
+    result = 0
+    for c in reversed(coeffs):
+        result = result * x + c
+    return result
+
