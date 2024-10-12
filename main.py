@@ -33,14 +33,12 @@ print(f"Backward error (manual): {backward_error}")
 print(f"Orthogonality error: {orthogonality_error}")
 
 
-
 # Task 3: Solve the least squares problem using the QR factorization
 # Create vector b for sin(x_j)
 b = np.sin(x_j)
 
 # Compute Q^T * b
 Q_T_b = implicit_QT_b(W, b.copy())  # Compute Q^T * b using the Householder vectors in W
-
 
 # Solve for c
 c = back_substitution(R, Q_T_b)
