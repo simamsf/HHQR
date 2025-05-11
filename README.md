@@ -1,2 +1,2 @@
 # NLA
-Project for Numerical Linear Algebra
+Project for Numerical Linear Algebra: Householder QR decomposition
