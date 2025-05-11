@@ -1,9 +1,5 @@
 # Created: 10-05-2024 by Sima Moshafi 
 # Project 1: QR Factorization with Householder Reflections
-# In this project, we will implement the QR factorization of a matrix A using Householder reflections.
-# We will then use the resulting Q and R matrices to calculate the backward error of the factorization and compare it to the error in sin(pi).
-# My reference for this project is the book "Numerical Linear Algebra" by Lloyd N. Trefethen and David Bau III.
-
 
 import numpy as np
 import matplotlib.pyplot as plt
